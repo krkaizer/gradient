@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>CSS Gradient Generator</title>
+</head>
+
+<body>
+  <!-- шапка -->
+<div class="container">
+
+  <div class="menu">
+    <div class="icon">
+      <img src="./img/space_logo.png">
+      <p>GradientGenerator</p>
+    </div>
+    <div class="navigation">
+      <ul class="list">
+        <li><a href="#">gradient</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">info</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container_inner">
+    <div class="block">
+
+      <form>
+        <h1>Generate a CSS color gradient</h2>
+
+        <p>Enter colors</p>
+        <div class="colorsBlock">
+          <div class="colors firstColor">
+            <label for="fColor">First color</label>
+            <input type="color" id="fColor" value="#3a1368">
+  
+            <label for="fOffset">Offset</label>
+            <input type="range" id="fOffset" min="0" max="100" step="1" value="10">
+          </div>
+  
+          <div class="colors secondColor">
+            <label for="sColor">Second color</label>
+            <input type="color" id="sColor" value="#ea00ff">
+  
+            <label for="sOffset">Offset</label>
+            <input type="range" id="sOffset" min="0" max="100" step="1" value="100">
+          </div>
+        </div>     
+
+        <p>Choose orientation</p>
+        <input type="radio" id="right" name="orientation" value="linear-gradient(90deg" checked>
+        <label for="right">right</label>
+
+        <input type="radio" id="bottom" value="linear-gradient(180deg" name="orientation">
+        <label for="bottom">bottom</label>
+
+        <input type="radio" id="left" value="linear-gradient(270deg" name="orientation">
+        <label for="left">left</label>
+
+        <input type="radio" id="top" value="linear-gradient(0deg" name="orientation">
+        <label for="top">top</label>
+
+        <input type="radio" id="radial" value="radial-gradient(circle" name="orientation">
+        <label for="radial">radial</label>
+
+        <div class="result">
+          <p>Your CSS:</p>
+          <textarea id="cssCode" readonly></textarea>
+        </div>
+        
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<script src="./js/main.js"></script>
+</body>
+
+</html>

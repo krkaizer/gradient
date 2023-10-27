@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(90deg, #833ab4 23%, #704646 100%);
+    color: rgb(255, 255, 255, 0.8);
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.menu {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+img {
+    height: 70px;
+}
+.icon p {
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.8);
+}
+a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.list {
+    display: flex;
+    list-style: none;
+}
+
+.list li {
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.block {
+    text-align: center;
+    width: 500px;
+    margin: 100px auto;
+}
+
+.block p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.colorsBlock {
+    display: flex;
+    justify-content: center;
+}
+
+.colors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.result {
+    text-align: left;
+}
+
+textarea {
+    resize: none;
+    height: 70px;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: rgb(255, 255, 255, 0.2);
+    color: white;
+  }
